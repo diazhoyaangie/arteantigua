@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 10000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #55ca84a6;
+     /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, hsla(358, 89%, 72%, 0.74), hsla(42, 94%, 75%, 0.466), #C6FFDD); 
+ /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, hsl(358, 89%, 72%, 0.596), hsl(42, 94%, 75%, 0.562), hsla(144, 100%, 89%, 0.568)),url(../img/index.jpeg);
+ 
+ background-attachment: fixed;
+ position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: rgb(175, 27, 27);
+    text-shadow: 1px 2px 3px rgb(10, 10, 10),0 0 25px rgb(3, 3, 107),0 0 5px rgb(5, 5, 131);
+    
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+   text-decoration:underline;
+    
+}
+ header .textos-header{
+     display: flex;
+     height: 430px;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     
+}
+.textos-header h1{
+    font-size: 50px;
+    color: rgb(8, 8, 8);
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenido-textos p{
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    width: 50%;
+    margin-left: 300px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.contenido-textos img{
+    margin-left: 300px;
+    width: 50%;
+    margin-top: 60px;
+}
+.imagen-about-us{
+    width: 48%;
+
+}
+
+.contenido-textos h3 span{
+    background: #1d6691;
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 1px 2px 2px 1px ;
+    margin-right: 5px;
+    margin-top: 50px;
+}
+
+/*biografias*/
+
+h1{
+    color: rgb(238, 230, 230);
+    text-shadow: 1px 2px 3px #000,0 0 25px blue,0 0 5px blue;
+    text-align: center;
+}
+
+div.biografias{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightseagreen;
+    float: left;
+    width: 700px;
+}
+ div.biografias img{
+     width: 100%;
+     height: auto;
+ }
+
+ div.biografias:hover{
+     border: 1px solid rgb(192, 98, 98);
+     transform: rotate(-7deg);
+ }
+
+ div.pie{
+     text-align: center;
+     
+     padding: 10px;
+ }
+ h2 {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightseagreen;
+    float: left;
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 150px;
+ }
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{ font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+
+.form{
+    background-color: darksalmon;
+    margin: auto;
+    width: 90%;
+    margin-top: 50px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px -5px rgb(0  0 /30%);
+     max-width: 400px;
+
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+
+}
+ .form_link{
+     font-weight: 400;
+     color: #000;
+
+ }
+
+.form_paragraph{
+    font-weight: 300
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color:#0202027e;
+
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #070505;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+
+}
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #1d6691;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s color .3s;
+}
+.form_submit{
+    background: blue;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: aqua;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label{
+    transform: scale(1);
+}
+.boton{
+    
+    font-family: "comicitalic";
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(238, 230, 230);
+    text-shadow: 1px 2px 3px #000,0 0 25px blue,0 0 5px blue;
+}
+
+
+@media (max-width:245px) {
+    .form_title{
+        font-size: 1.8rem;
+    }
+    .div .biografias{
+        font-size: 2.0rem;
+    }
+    
+ div.biografias {
+    width: 10px;
+    height: auto;
+ }
+}
+@media screen and (min-width:320px) and (max-width:500px){
+    header{
+        width: 100%;
+    }
+    nav > a{
+        
+        font-size: 30px;
+        margin-top: 40px;
+
+        
+    }
+    .contenido-textos p{
+        font-size: 10px;
+        
+    }
+    .logo{
+        width: 120;
+        height: 120;
+    }
+    nav > a{
+        flex-direction: column;
+    }
+    .arttit{
+        width: 100%;
+    }
+}
